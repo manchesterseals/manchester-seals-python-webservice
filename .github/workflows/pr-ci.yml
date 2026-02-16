@@ -7,6 +7,12 @@ on:
       - develop
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: write
+  deployments: write
+  statuses: write
+
 jobs:
   build-and-test:
     name: Build and Test
